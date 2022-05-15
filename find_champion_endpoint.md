@@ -26,6 +26,8 @@
 ---
 #### Examples
 
+These examples reflect the **champion_data** array seen in the example [find_champion.py](../main/find_champion.py) file
+
 1. find_champion('None', 'None', 'None')
 
    returns
