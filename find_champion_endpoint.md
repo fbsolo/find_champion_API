@@ -23,3 +23,35 @@
    a. if parameter **name** has a **None** value, or does not match a **champion_data.name** element, **find_champion** tries to use the *role* and *origin* parameters to match a **champion_data** row
 
 4. If the **role** and **origin** parameters match corresponding values in the same **champion_data** array element, **find_champion** returns that specific **champion_data** array element. Otherwise, **find_champion** returns an empty array
+---
+#### Examples
+
+1. find_champion('None', 'None', 'None')
+
+   returns
+   
+   []
+
+2. find_champion('sona', 'marksman', 'vastaya')
+
+   returns
+   
+   [{'name': 'sona', 'role': 'support', 'origin': 'ionia'}]
+
+3. find_champion('Ahri', 'None', 'ionia')
+
+   returns
+
+   []
+
+4. find_champion('None', 'support', 'ionia')
+
+   returns
+
+   [{'name': 'sona', 'role': 'support', 'origin': 'ionia'}]
+
+5. find_champion('None', 'support', 'bilgewater')
+
+   returns
+
+   []
