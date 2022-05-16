@@ -2,13 +2,13 @@
 
 #### Parameters
 
-##### name *string*
-##### role *string*
-##### origin *string*
+##### name *string* (default value: **None**)
+##### role *string* (default value: **None**)
+##### origin *string* (default value: **None**)
 ---
 #### Description
 
-1. **find_champion** depends on two-dimensional array **champion_data**; the nested array element(s) must have three elements of these names and types:
+1. **find_champion** depends on two-dimensional array **champion_data**; the nested array element(s) must themselves have three elements of these names and types:
 
    **name** *string*
    
